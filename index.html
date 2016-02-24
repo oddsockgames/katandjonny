@@ -17,13 +17,17 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.6, user-scalable=no">
-<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Amarante' rel='stylesheet' type='text/css'>
 <!--<script src="js/jquery.1.9.1.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){//Main.init();});
 	function log(_str) {try {console.log(_str);} catch(e) {}};
 </script>
 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/app.dev.js"></script>
+
 </head>
  
 <body>
@@ -58,8 +62,7 @@
   \ \____/\ \____/\ \_\ \_\ \__/.\_\\ \__\\ \_\ \_\ \__/.\_\ \_\ \_\   \ \____//\______/\_\\ \____/\/_/\_\_/\_\\ \_\ \____/
    \/___/  \/___/  \/_/\/_/\/__/\/_/ \/__/ \/_/\/_/\/__/\/_/\/_/\/_/    \/___/ \/_____/\/_/ \/___/    \/_/ \/_/ \/_/\/___/ 
                                                                                                                            
-                                                                                                                           
-
+                                                                                                                          
 -->
 
 	<div id="wrapper">
@@ -73,41 +76,105 @@
 		</header>
 
 
-		<section id="section">
 
-			<!--<div class="rabbit left"></div>
-			<div class="rabbit right"></div>
-			<div class="bunting"></div>-->
-			<div class="rabbitbunting"></div>
-			<div class="cathedral"></div>
+		<section class="fadein delay3 page" id="home">
 
-			<div class="info">
+			<div class="wrap">
 
-				<h1 class="center green upcase">Kathryn <span class="greendark">&amp;</span> Jonathan</h1>
+				<div class="rabbitbunting"></div>
 
-				<br>
-				<br>
-				<br class="mobile-hide">
-				<br class="mobile-hide">
+				<div class="info">
 
-				<h3 class="center upcase">Are getting<br>married</h3>
+					<h1 class="center green upcase">Kathryn <span class="greendark">&amp;</span> Jonathan</h1>
 
-				<br>
-				<br>
-				<br class="mobile-hide">
-				<br class="mobile-hide">
+					<br>
+					<br>
+					<br class="mobile-hide">
+					<br class="mobile-hide">
 
-				<h3 class="center green upcase">Save the date</h3>
+					<h3 class="center upcase">Are getting<br>married</h3>
+
+					<br>
+					<br>
+					<br class="mobile-hide">
+					<br class="mobile-hide">
+
+					<h3 class="center greendark upcase">Save the date</h3>
+
+				</div>
 
 			</div>
-			
+
+		</section>
+		
+
+		<section class="fadein delay3 page" id="day">
+			<div class="wrap">
+
+
+				<div class="cathedral"></div>
+
+
+				<div class="info">
+
+					<p><span>THE BIG DAY</span></p>
+
+					<br>
+
+					<p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. </p>
+
+					<br>
+
+					<p>Qui animated corpse, cricket bat max brucks terribilem incessu zomby. </p>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="fadein delay3 page" id="info">
+			<div class="wrap">
+
+				<div class="cathedral"></div>
+
+				<div class="info">
+
+					<p><span>MORE INFO</span></p>
+
+					<br>
+
+					<p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. </p>
+
+					<br>
+
+					<p>Qui animated corpse, cricket bat max brucks terribilem incessu zomby. </p>
+				</div>
+
+
+			</div>
 		</section>
 
-		<footer id="footer">
-			<div class="floor"></div>
-			<div class="info">
-				<h3 class="center pink upcase">Invitation to <br class="desktop-hide">follow</h3>
+
+		<section class="fadein delay3 page" id="rsvp">
+			<div class="wrap">
+				<div class="info">
+					<p><span>PLEASE EMAIL</span> <br> katandjonny2016<br><span>@gmail.com</span> </p>
+				</div>
+				<div class="rabbits spin"></div>
 			</div>
+		</section>
+
+
+		<footer id="footer" class="moveup">
+			<div class="floor"></div>
+			<nav class="moveup time1 delay1" id="navigation">
+				<ul>
+					<li class="btn selected" data-btn-info="nav 0"><h3>HOME</h3></li>
+					<li class="btn" data-btn-info="nav 1"><h3>DAY</h3></li>
+					<li class="btn" data-btn-info="nav 2"><h3>INFO</h3></li>
+					<li class="btn" data-btn-info="nav 3"><h3>RSVP</h3></li>
+				</ul>
+			</nav>
+
 		</footer>
 
 	</div>
