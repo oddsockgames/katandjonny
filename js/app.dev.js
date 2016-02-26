@@ -126,6 +126,7 @@ App.view = function() {
         });
         if (App.config.mobile) {
             el.footer.removeClass("moveup");
+            el.navigation.removeClass("moveup time1 delay1");
         }
         showPage(App.config.page, function() {
             console.log("removed all delays!!");
