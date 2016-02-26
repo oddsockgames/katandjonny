@@ -105,6 +105,7 @@ App.view = function() {
     var init = function() {
         console.log("Initialising VIEW");
         el = {
+            footer: $("footer"),
             pages: $("section.page"),
             navigation: $("footer nav#navigation"),
             buttons: $(".btn")
@@ -123,6 +124,9 @@ App.view = function() {
             }
             $(document).trigger("onClick", [ name, id ]);
         });
+        if (App.config.mobile) {
+            el.footer.removeClass("moveup");
+        }
         showPage(App.config.page, function() {
             console.log("removed all delays!!");
             setTimeout(function() {
